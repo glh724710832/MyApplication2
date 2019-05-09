@@ -31,7 +31,7 @@ public class LocalActivity extends AppCompatActivity {
 
 
 二/本地广播
-方法同上 区别在于local   通过 localBroadcastManager = LocalBroadcastManager.getInstance(this)获取的实例localBroadcastManager调用  注册广播 和 发送广播
+方法同上 区别在于local   通过 localBroadcastManager = LocalBroadcastManager.getInstance(this)获取的实例localBroadcastManager调用  注册广播 注销广播 和 发送广播
 
  */
 
@@ -71,7 +71,7 @@ public class LocalActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(localReceiver);
+        localBroadcastManager.unregisterReceiver(localReceiver);
     }
 
     //1.创建一个类继承BroadcastReceiver
