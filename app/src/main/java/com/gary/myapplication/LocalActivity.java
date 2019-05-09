@@ -73,6 +73,7 @@ public class LocalActivity extends AppCompatActivity {
         super.onDestroy();
         localBroadcastManager.unregisterReceiver(localReceiver);
     }
+    
 
     //1.创建一个类继承BroadcastReceiver
     class LocalReceiver extends BroadcastReceiver {
