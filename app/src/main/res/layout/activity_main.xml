@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我发送无序广播"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/tv-ordered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我发送有序广播"
+        android:layout_below="@id/tv"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进入动态注册页"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+
+
+</RelativeLayout>
